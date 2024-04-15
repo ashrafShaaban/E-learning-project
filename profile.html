@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css"> 
+</head>
+<body>
+
+    <!-- start header section -->
+    <header class="header">
+        <section class="flex">
+            <a href="home.html" class="logo">EdWeb</a>
+             
+            <form method="post" action="" class="search-form">
+             <input type="text" name="search-input" placeholder="search courses" required maxlength="100">
+             <button  type="submit" class="fas fa-search" name="search-button"></button>
+            </form>
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+
+         <div class="profile">
+            <img src="images/pic-1.jpg" alt=""/>
+            <h3>Ashraf Shaaban</h3>
+            <span>student</span>
+            <a href="profile.html" class="pro">view profile</a>
+            <div class="register">
+               <a href="login.html">login</a>
+               <a href="register.html">register</a>
+           </div>
+         </div>
+        </section>
+        
+    </header>
+    <!-- end header section -->
+    <!-- start side bar section -->
+    <div class="side-bar">
+        <div class="closebtn">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="profile">
+            <img src="images/pic-1.jpg" alt=""/>
+            <h3>Ashraf Shaaban</h3>
+            <span>student</span>
+            <a href="profile.html" class="pro">view profile</a>
+
+        </div>
+            <nav class="bar">
+            <a href="home.html" ><i class="fas fa-home "></i><span>Home</span></a>
+            <a href="about.html" ><i class="fas fa-question fa-1x"></i><span>About us</span></a>
+            <a href="courses.html" ><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+            <a href="teachers.html" ><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a>
+            <a href="contact.html" ><i class="fas fa-headphones"></i><span>Contact us</span></a>
+        </nav>
+    </div>
+    
+    <!-- end side bar section -->
+
+
+
+    <!-- start profile section -->
+    <section class="profile">
+        <div class="details">
+            <div class="user">
+                <img src="images/pic-1.jpg" alt="" />
+                <h3>ashraf shaaban</h3>
+                <p>student</p>
+                <a href="update-profile.html" class="pro">update profile</a>
+            </div>
+
+            <div class="box-container">
+                <div class="box">
+                    <div class="data">
+                    <i class="fas fa-bookmark"></i>
+                      <div>
+                        <h3>3</h3>
+                        <span>saved playlists</span>
+                      </div>
+                   </div>
+                    <a href="" class="pro">view playlist</a>
+                </div>
+                <div class="box">
+                    <div class="data">
+                    <i class="fas fa-heart"></i>
+                      <div>
+                        <h3>60</h3>
+                        <span>liked tutorials</span>
+                      </div>
+                    </div>
+                    <a href="" class="pro">view liked</a>
+                </div>
+                <div class="box">
+                    <div class="data">
+                    <i class="fas fa-comment"></i>
+                      <div>
+                        <h3>25</h3>
+                        <span>video comment</span>
+                      </div>
+                    </div>
+                    <a href="" class="pro">view comments</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end profile section -->
+
+    
+
+    <footer class="footer">
+        &copy; copyrights @ 2024 <span>Developer. Ashraf Shaaban</span> all rights reseved.
+    </footer>
+    
+    <script src="js/style.js"></script>
+</body>
+</html>
