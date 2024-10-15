@@ -7,10 +7,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css"> 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "Sfn8D6O9YtXL8b4si",
+        });
+    })();
+    </script>
+    
 </head>
 <body>
 
     <!-- start header section -->
+    
     <header class="header">
         <section class="flex">
             <a href="home.html" class="logo">EdWeb</a>
@@ -70,13 +85,13 @@
             <img src="images/contact-img.svg" alt=""/>
         </div>
 
-        <form action="" method="post" class="contact-form">
+        <form action="" onsubmit="sendMail(); return false;" method="post" class="contact-form">
             <h3>get in touch</h3>
-            <input type="text" name="name" placeholder="enter your name" required maxlength="100" class="cell" />
-            <input type="email" name="email add" placeholder="enter your email" required maxlength="100" class="cell" />
-            <input type="number" name="phone number" placeholder="enter your number" required maxlength="100" class="cell" />
-            <textarea name="msg" cols="30" rows="30" placeholder="enter your message" class="cell" required maxlength="500"></textarea>
-            <input type="submit" name="submit" value="send message" class="pro" />
+            <input type="text" id="name" name="name" placeholder="enter your name" required maxlength="100" class="cell" />
+            <input type="email" id="email" name="email add" placeholder="enter your email" required maxlength="100" class="cell" />
+            <input type="number" id="number" name="phone number" placeholder="enter your number" required maxlength="100" class="cell" />
+            <textarea name="msg" id="message" cols="30" rows="30" placeholder="enter your message" class="cell" required maxlength="500"></textarea>
+            <button type="submit"   name="submit" value="send message" class="pro">Send</button>
         </form>
      </div>
      <div class="box-container">
@@ -100,7 +115,7 @@
             <i class="fas fa-map-marker-alt"></i>
             <h3>office address</h3>
 
-            <a href="#">flat no.2, 37 building, sofan street, bahteem, shoubra El-Kheima</a>
+            <a href="#">flat no.2, 37 building, sofan street, 000bahteem, shoubra El-Kheima</a>
             
         </div>
      </div>
@@ -110,7 +125,8 @@
     <footer class="footer">
         &copy; copyrights @ 2024 <span>Developer. Ashraf Shaaban</span> all rights reseved.
     </footer>
+
     
-    <script src="js/style.js"></script>
+    <script src="js/style.js" type="text/javascript"></script>
 </body>
 </html>
